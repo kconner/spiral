@@ -1,6 +1,6 @@
 version: "Apple Swift version 2.2-dev (LLVM 46be9ff861, Clang 4deb154edc, Swift 778f82939c)"
 options: "169315976b64aa43daebb6d75a9b35e3"
-build_time: [506808841, 60518000]
+build_time: [506810406, 574902000]
 inputs:
-  "/Users/kevinconner/Desktop/spiral/Sources/main.swift": [506808810, 0]
-  "/Users/kevinconner/Desktop/spiral/Sources/spiral.swift": [506808592, 0]
+  "/Users/kevinconner/Desktop/spiral/Sources/main.swift": [506809666, 0]
+  "/Users/kevinconner/Desktop/spiral/Sources/spiral.swift": [506809337, 0]

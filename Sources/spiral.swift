@@ -3,7 +3,7 @@
 
 import Foundation
 
-func spiralStringWithRange(range: Range<Int>) -> String {
+func printSpiralWithRange(range: Range<Int>) {
 	guard let first = range.first, let last = range.last else {
 		preconditionFailure("range should contain at least one number.")
 	}
@@ -14,12 +14,14 @@ func spiralStringWithRange(range: Range<Int>) -> String {
     let coilCount = coilCountForCellCount(range.count)
     let numberAtLocation = numberAtLocationWithFirstNumber(first)
 
-    return (-coilCount...coilCount).map { y in
-        return (-coilCount...coilCount).map { x in
+    for y in -coilCount...coilCount {
+    	for x in -coilCount...coilCount {
             let number = numberAtLocation(x, y)
-            return number <= last ? String(format: "%*d", cellWidth, number) : blankCell
-        }.joinWithSeparator("")
-    }.joinWithSeparator("\n")
+            let cell = number <= last ? String(format: "%*d", cellWidth, number) : blankCell
+            print(cell, terminator: "")
+    	}
+    	print("")
+    }
 }
 
 // How many times does the spiral loop around?

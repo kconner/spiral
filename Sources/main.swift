@@ -6,11 +6,11 @@ func main(arguments: [String]) {
 		let count = Int(countString) where 0 < count
 		else
 	{
-		print("Usage: spiral <positive integer>")
+		print("Usage: spiral <positive integer up to 170746489>")
 		return
 	}
 	
-	print(spiralStringWithRange(1...count))
+	printSpiralWithRange(1...count)
 }
 
 main(Process.arguments)
