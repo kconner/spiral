@@ -4,23 +4,23 @@
 import Foundation
 
 func printSpiralWithRange(range: Range<Int>) {
-	guard let first = range.first, let last = range.last else {
-		preconditionFailure("range should contain at least one number.")
-	}
+    guard let first = range.first, let last = range.last else {
+        preconditionFailure("range should contain at least one number.")
+    }
 
-	let cellWidth = String(last).characters.count + 1
+    let cellWidth = String(last).characters.count + 1
     let blankCell = Array(count: cellWidth, repeatedValue: " ").joinWithSeparator("")
 
     let coilCount = coilCountForCellCount(range.count)
     let numberAtLocation = numberAtLocationWithFirstNumber(first)
 
     for y in -coilCount...coilCount {
-    	for x in -coilCount...coilCount {
+        for x in -coilCount...coilCount {
             let number = numberAtLocation(x, y)
             let cell = number <= last ? String(format: "%*d", cellWidth, number) : blankCell
             print(cell, terminator: "")
-    	}
-    	print("")
+        }
+        print("")
     }
 }
 

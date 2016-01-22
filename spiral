@@ -2,4 +2,4 @@
 
 # Build and run.
 swift build --configuration release &&
-	.build/release/spiral $@
+    .build/release/spiral $@
