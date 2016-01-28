@@ -16,10 +16,5 @@ $> spiral 14
 
 ## Solution
 
-This solution works on numbers as large as 170746489, but segfaults after that. The bottleneck is a memoizing hash of `[Location: Int]`; everything else more or less streams to stdout. And due to that memo, the only other bottleneck is printing. If you pipe it somewhere, the program is fast:
+This solution works on numbers as large as 170746489, but segfaults after that. The bottleneck is a memoizing hash of `[Location: Int]`; everything else more or less streams to stdout. And due to that memo, the only other bottleneck is printing.
 
-```
-$ time ./spiral 170746489 | echo
-
-        0.12 real         0.06 user         0.04 sys
-```
