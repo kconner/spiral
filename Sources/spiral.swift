@@ -15,12 +15,12 @@ func printSpiralWithRange(range: Range<Int>) {
     let numberAtLocation = numberAtLocationWithFirstNumber(first)
 
     for y in -coilCount...coilCount {
+        var line = ""
         for x in -coilCount...coilCount {
             let number = numberAtLocation(x, y)
-            let cell = number <= last ? String(format: "%*d", cellWidth, number) : blankCell
-            print(cell, terminator: "")
+            line += number <= last ? String(format: "%*d", cellWidth, number) : blankCell
         }
-        print("")
+        print(line)
     }
 }
 

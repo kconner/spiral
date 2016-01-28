@@ -11,19 +11,19 @@ commands:
   <spiral-swiftc>:
     tool: swift-compiler
     executable: "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-01-a.xctoolchain/usr/bin/swiftc"
-    inputs: ["/Users/kevinconner/Desktop/spiral/Sources/main.swift","/Users/kevinconner/Desktop/spiral/Sources/spiral.swift"]
-    outputs: ["<spiral-swiftc>","/Users/kevinconner/Desktop/spiral/.build/release/spiral.swiftmodule","/Users/kevinconner/Desktop/spiral/.build/release/spiral.o/Sources/main.swift.o","/Users/kevinconner/Desktop/spiral/.build/release/spiral.o/Sources/spiral.swift.o"]
+    inputs: ["/Users/kevinconner/src/kconner/spiral/Sources/main.swift","/Users/kevinconner/src/kconner/spiral/Sources/spiral.swift"]
+    outputs: ["<spiral-swiftc>","/Users/kevinconner/src/kconner/spiral/.build/release/spiral.swiftmodule","/Users/kevinconner/src/kconner/spiral/.build/release/spiral.o/Sources/main.swift.o","/Users/kevinconner/src/kconner/spiral/.build/release/spiral.o/Sources/spiral.swift.o"]
     module-name: "spiral"
-    module-output-path: "/Users/kevinconner/Desktop/spiral/.build/release/spiral.swiftmodule"
+    module-output-path: "/Users/kevinconner/src/kconner/spiral/.build/release/spiral.swiftmodule"
     is-library: false
-    sources: ["/Users/kevinconner/Desktop/spiral/Sources/main.swift","/Users/kevinconner/Desktop/spiral/Sources/spiral.swift"]
-    objects: ["/Users/kevinconner/Desktop/spiral/.build/release/spiral.o/Sources/main.swift.o","/Users/kevinconner/Desktop/spiral/.build/release/spiral.o/Sources/spiral.swift.o"]
-    import-paths: ["/Users/kevinconner/Desktop/spiral/.build/release"]
-    temps-path: "/Users/kevinconner/Desktop/spiral/.build/release/spiral.o/spiral"
+    sources: ["/Users/kevinconner/src/kconner/spiral/Sources/main.swift","/Users/kevinconner/src/kconner/spiral/Sources/spiral.swift"]
+    objects: ["/Users/kevinconner/src/kconner/spiral/.build/release/spiral.o/Sources/main.swift.o","/Users/kevinconner/src/kconner/spiral/.build/release/spiral.o/Sources/spiral.swift.o"]
+    import-paths: ["/Users/kevinconner/src/kconner/spiral/.build/release"]
+    temps-path: "/Users/kevinconner/src/kconner/spiral/.build/release/spiral.o/spiral"
     other-args: ["-j8","-O","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk","-I","/usr/local/include"]
   <spiral>:
     tool: shell
-    inputs: ["<spiral-swiftc>","/Users/kevinconner/Desktop/spiral/.build/release/spiral.o/Sources/main.swift.o","/Users/kevinconner/Desktop/spiral/.build/release/spiral.o/Sources/spiral.swift.o"]
-    outputs: ["<spiral>","/Users/kevinconner/Desktop/spiral/.build/release/spiral"]
-    args: ["/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-01-a.xctoolchain/usr/bin/swiftc","-o","/Users/kevinconner/Desktop/spiral/.build/release/spiral","/Users/kevinconner/Desktop/spiral/.build/release/spiral.o/Sources/main.swift.o","/Users/kevinconner/Desktop/spiral/.build/release/spiral.o/Sources/spiral.swift.o","-Xlinker","-all_load","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk","-L/usr/local/lib"]
+    inputs: ["<spiral-swiftc>","/Users/kevinconner/src/kconner/spiral/.build/release/spiral.o/Sources/main.swift.o","/Users/kevinconner/src/kconner/spiral/.build/release/spiral.o/Sources/spiral.swift.o"]
+    outputs: ["<spiral>","/Users/kevinconner/src/kconner/spiral/.build/release/spiral"]
+    args: ["/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-01-a.xctoolchain/usr/bin/swiftc","-o","/Users/kevinconner/src/kconner/spiral/.build/release/spiral","/Users/kevinconner/src/kconner/spiral/.build/release/spiral.o/Sources/main.swift.o","/Users/kevinconner/src/kconner/spiral/.build/release/spiral.o/Sources/spiral.swift.o","-Xlinker","-all_load","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk","-L/usr/local/lib"]
     description: "Linking Executable:  .build/release/spiral"

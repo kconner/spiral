@@ -5,18 +5,18 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "Process"
-- !private "..."
-- !private "FloatLiteralType"
-- !private "<"
-- "main"
-- !private "=="
 - !private "IntegerLiteralType"
-- !private "print"
+- !private "=="
+- !private "..."
+- !private "<"
 - !private "StringLiteralType"
-- !private "Int"
+- "Process"
+- !private "print"
+- !private "FloatLiteralType"
 - "String"
 - !private "printSpiralWithRange"
+- "main"
+- !private "Int"
 depends-member:
 - !private ["Sa", "Generator"]
 - !private ["Sa", "Index"]

@@ -1,17 +1,17 @@
 {
   "": {
-    "swift-dependencies": "/Users/kevinconner/Desktop/spiral/.build/release/spiral.o/spiral/master.swiftdeps"
+    "swift-dependencies": "/Users/kevinconner/src/kconner/spiral/.build/release/spiral.o/spiral/master.swiftdeps"
   },
-  "/Users/kevinconner/Desktop/spiral/Sources/main.swift": {
-    "dependencies": "/Users/kevinconner/Desktop/spiral/.build/release/spiral.o/spiral/main.d",
-    "object": "/Users/kevinconner/Desktop/spiral/.build/release/spiral.o/Sources/main.swift.o",
-    "swiftmodule": "/Users/kevinconner/Desktop/spiral/.build/release/spiral.o/spiral/main~partial.swiftmodule",
-    "swift-dependencies": "/Users/kevinconner/Desktop/spiral/.build/release/spiral.o/spiral/main.swiftdeps"
+  "/Users/kevinconner/src/kconner/spiral/Sources/main.swift": {
+    "dependencies": "/Users/kevinconner/src/kconner/spiral/.build/release/spiral.o/spiral/main.d",
+    "object": "/Users/kevinconner/src/kconner/spiral/.build/release/spiral.o/Sources/main.swift.o",
+    "swiftmodule": "/Users/kevinconner/src/kconner/spiral/.build/release/spiral.o/spiral/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/kevinconner/src/kconner/spiral/.build/release/spiral.o/spiral/main.swiftdeps"
   },
-  "/Users/kevinconner/Desktop/spiral/Sources/spiral.swift": {
-    "dependencies": "/Users/kevinconner/Desktop/spiral/.build/release/spiral.o/spiral/spiral.d",
-    "object": "/Users/kevinconner/Desktop/spiral/.build/release/spiral.o/Sources/spiral.swift.o",
-    "swiftmodule": "/Users/kevinconner/Desktop/spiral/.build/release/spiral.o/spiral/spiral~partial.swiftmodule",
-    "swift-dependencies": "/Users/kevinconner/Desktop/spiral/.build/release/spiral.o/spiral/spiral.swiftdeps"
+  "/Users/kevinconner/src/kconner/spiral/Sources/spiral.swift": {
+    "dependencies": "/Users/kevinconner/src/kconner/spiral/.build/release/spiral.o/spiral/spiral.d",
+    "object": "/Users/kevinconner/src/kconner/spiral/.build/release/spiral.o/Sources/spiral.swift.o",
+    "swiftmodule": "/Users/kevinconner/src/kconner/spiral/.build/release/spiral.o/spiral/spiral~partial.swiftmodule",
+    "swift-dependencies": "/Users/kevinconner/src/kconner/spiral/.build/release/spiral.o/spiral/spiral.swiftdeps"
   }
 }
